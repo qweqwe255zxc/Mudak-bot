@@ -1,0 +1,108 @@
+* {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: radial-gradient(circle at top, #382e2e, #050505);
+            color: #00ffcc;
+            text-align: center;
+            padding: 3rem 1rem;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px #00ffd0, 0 0 20px #00ffd0;
+        }
+
+        input[type="file"] {
+            padding: 1rem;
+            font-size: 1rem;
+            border: 2px dashed #00ffcc;
+            background: rgba(0, 255, 204, 0.05);
+            color: #00ffcc;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        input[type="file"]:hover {
+            background: rgba(0, 255, 204, 0.15);
+            transform: scale(1.02);
+        }
+
+        .custom-upload {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #00ffcc, #00aaff);
+            color: #000;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 0 10px #00ffc3, 0 0 20px #00c3ff;
+            transition: transform 0.3s ease,  0.3s ease;
+        }
+
+        .custom-upload:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #00ffc3, #0088ff);
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        #file-upload-button {
+            display: none;
+        }
+
+
+        img {
+            max-width: 300px;
+            margin-top: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        #output {
+            margin-top: 2rem;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ff00ff;
+            text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+            transition: opacity 0.4s ease;
+        }
+
+        #loader {
+            display: none;
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            color: #999;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
